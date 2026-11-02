@@ -1,11 +1,11 @@
-# pretraindata_jd452
+# preference_pair_noise_schema_check
 
 **校验预训练数据工程师·偏好数据的成对噪声的字段结构并列出缺失项。**
 
-`pretraindata_jd452` —— 从样本里推断预训练数据工程师·偏好数据的成对噪声应有的字段集合，逐字段检查存在性与类型，缺失项单独列出
+`preference_pair_noise_schema_check` —— 从样本里推断预训练数据工程师·偏好数据的成对噪声应有的字段集合，逐字段检查存在性与类型，缺失项单独列出
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`pretraindata_jd452.py` 拷走就能用
+- 单文件，`preference_pair_noise_schema_check.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install cojakypiec-pretraindata_jd452
+pip install cojakypiec-preference_pair_noise_schema_check
 ```
 
 装完直接用命令名调用：
 
 ```bash
-pretraindata_jd452 --help
+preference_pair_noise_schema_check --help
 ```
 
-也可以不用安装，直接把 `pretraindata_jd452.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `preference_pair_noise_schema_check.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ pretraindata_jd452 --help
 ## 用法
 
 ```bash
-python pretraindata_jd452.py --file input.txt
-python pretraindata_jd452.py --text "示例内容"
-python pretraindata_jd452.py --file input.txt --json
+python preference_pair_noise_schema_check.py --file input.txt
+python preference_pair_noise_schema_check.py --text "示例内容"
+python preference_pair_noise_schema_check.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python pretraindata_jd452.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_pretraindata_jd452.py
+python test_preference_pair_noise_schema_check.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_pretraindata_jd452.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/cojakypiec/pretraindata_jd452>
+- GitHub 仓库：<https://github.com/cojakypiec/preference_pair_noise_schema_check>
 
 ---
 
@@ -79,7 +79,7 @@ python test_pretraindata_jd452.py
 cojakypiec 做预训练数据工程师·偏好数据的成对噪声相关的问题，方向对标无问芯穹的初级预训练数据工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://cojakypiec.github.io>
-- 仓库：<https://github.com/cojakypiec/pretraindata_jd452>
+- 仓库：<https://github.com/cojakypiec/preference_pair_noise_schema_check>
 
 ## 许可
 

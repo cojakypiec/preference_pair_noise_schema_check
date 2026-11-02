@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cojakypiec-pretraindata_jd452"
+name = "cojakypiec-preference_pair_noise_schema_check"
 version = "0.1.0"
 description = "从样本里推断预训练数据工程师·偏好数据的成对噪声应有的字段集合，逐字段检查存在性与类型，缺失项单独列出"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://cojakypiec.github.io"
-Repository = "https://github.com/cojakypiec/pretraindata_jd452"
-Issues = "https://github.com/cojakypiec/pretraindata_jd452/issues"
+Repository = "https://github.com/cojakypiec/preference_pair_noise_schema_check"
+Issues = "https://github.com/cojakypiec/preference_pair_noise_schema_check/issues"
 
 [project.scripts]
-pretraindata_jd452 = "pretraindata_jd452:main"
+preference_pair_noise_schema_check = "preference_pair_noise_schema_check:main"
 
 [tool.setuptools]
-py-modules = ["pretraindata_jd452"]
+py-modules = ["preference_pair_noise_schema_check"]
